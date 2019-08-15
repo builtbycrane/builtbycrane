@@ -1,8 +1,9 @@
+import React from 'react'
 import Layout from './../components/layout'
-import Head from 'next/head';
+import Head from 'next/head'
 import FeatureImage from './../components/feature-image'
 
-const Index = (props) => (
+const Index = () => (
   <Layout>
     <Head>
       <title>Crane Applications Ltd</title>
@@ -15,4 +16,4 @@ const Index = (props) => (
   </Layout>
 )
 
-export default Index;
+export default Index

@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "standard",
+    "plugin:react/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "16.4.1"
+    }
+  }
+}

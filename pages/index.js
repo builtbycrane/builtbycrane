@@ -1,16 +1,17 @@
 import Layout from './../components/layout'
 import Head from 'next/head';
 import FeatureImage from './../components/feature-image'
+import GlobalStyles from './../components/global-styles'
 
 const Index = (props) => (
   <Layout>
+    {/* <GlobalStyles/> */}
     <Head>
-      <title>Crane Applications Ltd</title>
+      <title>Crane</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <div>
-      <h1>Crane Applications Ltd</h1>
-      <FeatureImage/>
+      <FeatureImage />
     </div>
   </Layout>
 )

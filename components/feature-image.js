@@ -1,7 +1,7 @@
 import React from 'react'
 
-function FeatureImage () {
-  return <img src="/static/feature-image.svg" alt="Crane Applications Ltd" />
+const FeatureImage = () => {
+  return <img src="/static/feature-image.svg" alt="Crane" />
 }
 
 export default FeatureImage

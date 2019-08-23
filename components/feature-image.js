@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {createUseStyles} from 'react-jss'
+import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
   feature: {
@@ -11,9 +11,9 @@ const useStyles = createUseStyles({
     position: 'absolute',
     width: '635px',
     bottom: '45%',
-    left: "15%"
+    left: '15%'
   },
-  logo: {
+  cranelogo: {
     width: '300px',
     margin: '0 0 15px'
   },
@@ -39,13 +39,19 @@ const useStyles = createUseStyles({
       left: '0',
       right: '0',
       margin: '0 auto',
-      textAlign: 'center'
+      textAlign: 'center',
+      width: 'auto',
+      padding: '0 20px'
     },
-    logo: {
-      margin: '0 auto'
+    cranelogo: {
+      margin: '0 auto',
+      padding: '0 20px 0 0',
+      width: '250px'
     },
     h1: {
-      padding: '0'
+      padding: '0',
+      fontSize: '30px',
+      lineHeight: '35px'
     }
   }
 })
@@ -55,7 +61,7 @@ const FeatureImage = () => {
   return (
     <div className={classes.feature}>
       <div className={classes.text}>
-        <img src="/static/logo-crane.svg" alt="Crane" className={classes.logo} />
+        <img src="/static/logo-crane.svg" alt="Crane" className={classes.cranelogo} />
         <h1 className={classes.h1}>Innovative software <span className={classes.with}>with</span> captivating experiences</h1>
       </div>
       <img src="/static/feature-image.svg" alt="Crane" className={classes.image} />

@@ -11,6 +11,7 @@ const Layout = (props) => (
       <title>Crane</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet"></link>
+      <link rel="shortcut icon" href="/static/favicon.ico" />
     </Head>
     <div>
       {props.children}

@@ -1,62 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1920px" height="1184px" viewBox="0 0 1920 1184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
-    <title>Group 6</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
-            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
-        </linearGradient>
-        <polygon id="path-2" points="1321.85726 445 1920 869.994204 1920 1080 1038.04584 1080"></polygon>
-        <filter x="-8.1%" y="-10.9%" width="115.8%" height="122.0%" filterUnits="objectBoundingBox" id="filter-3">
-            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
-            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
-            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
-        </linearGradient>
-        <polygon id="path-5" points="1143.65888 0 1320.39089 467.612976 1941.66229 907.936541 1920 1080 1920 0"></polygon>
-        <filter x="-8.9%" y="-6.2%" width="117.5%" height="119.6%" filterUnits="objectBoundingBox" id="filter-6">
-            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
-            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
-            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
-        </linearGradient>
-        <polygon id="path-8" points="5.68434189e-13 0 1540.23191 0 1046.27126 1080 5.68434189e-13 1080"></polygon>
-        <filter x="-4.4%" y="-6.2%" width="109.1%" height="112.7%" filterUnits="objectBoundingBox" id="filter-9">
-            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g fill-rule="nonzero" id="Group-6">
-            <g>
-                <g id="Path-4">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-                    <use fill="#3A732E" xlink:href="#path-2"></use>
-                    <use fill-opacity="0.5" fill="url(#linearGradient-1)" style="mix-blend-mode: darken;" xlink:href="#path-2"></use>
-                </g>
-                <g id="Path-3">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
-                    <use fill="#478E38" xlink:href="#path-5"></use>
-                    <use fill="url(#linearGradient-4)" style="mix-blend-mode: darken;" xlink:href="#path-5"></use>
-                </g>
-                <g id="Path-2">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
-                    <use fill="#59B146" xlink:href="#path-8"></use>
-                    <use fill-opacity="0.5" fill="url(#linearGradient-7)" style="mix-blend-mode: darken;" xlink:href="#path-8"></use>
-                </g>
-            </g>
-        </g>
+<svg  viewBox="0 0 1920 1184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+      <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+    </linearGradient>
+    <polygon id="path-2" points="1321.85726 445 1920 869.994204 1920 1080 1038.04584 1080"></polygon>
+    <filter x="-8.1%" y="-10.9%" width="115.8%" height="122.0%" filterUnits="objectBoundingBox" id="filter-3">
+      <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+      <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+      <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+    </filter>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+      <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+      <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+    </linearGradient>
+    <polygon id="path-5" points="1143.65888 0 1320.39089 467.612976 1941.66229 907.936541 1920 1080 1920 0"></polygon>
+    <filter x="-8.9%" y="-6.2%" width="117.5%" height="119.6%" filterUnits="objectBoundingBox" id="filter-6">
+      <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+      <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+      <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+    </filter>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+      <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+      <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+    </linearGradient>
+    <polygon id="path-8" points="5.68434189e-13 0 1540.23191 0 1046.27126 1080 5.68434189e-13 1080"></polygon>
+    <filter x="-4.4%" y="-6.2%" width="109.1%" height="112.7%" filterUnits="objectBoundingBox" id="filter-9">
+      <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+      <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+      <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+    </filter>
+  </defs>
+  <g stroke="none" fill="none" fill-rule="nonzero">
+    <g>
+      <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+      <use fill="#3A732E" xlink:href="#path-2"></use>
+      <use fill-opacity="0.5" fill="url(#linearGradient-1)" style="mix-blend-mode: darken;" xlink:href="#path-2"></use>
     </g>
+    <g>
+      <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+      <use fill="#478E38" xlink:href="#path-5"></use>
+      <use fill="url(#linearGradient-4)" style="mix-blend-mode: darken;" xlink:href="#path-5"></use>
+    </g>
+    <g>
+      <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+      <use fill="#59B146" xlink:href="#path-8"></use>
+      <use fill-opacity="0.5" fill="url(#linearGradient-7)" style="mix-blend-mode: darken;" xlink:href="#path-8"></use>
+    </g>
+  </g>
 </svg>

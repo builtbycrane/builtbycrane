@@ -2,22 +2,28 @@ import React from 'react'
 
 import { createUseStyles } from 'react-jss'
 
-const useStyles = createUseStyles({
-  feature: {
-    position: 'relative'
+const ratio = 1184 / 1920
 
+const useStyles = createUseStyles(theme => ({
+  feature: {
+    backgroundImage: 'url(/static/crane-flying.jpg)',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundBlendMode: 'multiply',
+    height: '100vh',
+    backgroundColor: theme.primary.main,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center'
   },
   text: {
-    position: 'absolute',
-    width: '635px',
-    bottom: '45%',
-    left: '15%'
   },
   cranelogo: {
-    width: '300px',
+    width: '460px',
     margin: '0 0 15px'
   },
-  h1: {
+  strapline: {
     fontSize: '40px',
     lineHeight: '50px',
     fontWeight: '700',
@@ -27,11 +33,6 @@ const useStyles = createUseStyles({
   },
   with: {
     fontWeight: '400'
-  },
-  image: {
-    maxWidth: '100%',
-    width: '100%',
-    height: 'auto'
   },
   '@media (max-width: 1024px)': {
     text: {
@@ -48,13 +49,13 @@ const useStyles = createUseStyles({
       padding: '0 20px 0 0',
       width: '250px'
     },
-    h1: {
+    strapline: {
       padding: '0',
       fontSize: '30px',
       lineHeight: '35px'
     }
   }
-})
+}))
 
 const FeatureImage = () => {
   const classes = useStyles()
@@ -62,9 +63,9 @@ const FeatureImage = () => {
     <div className={classes.feature}>
       <div className={classes.text}>
         <img src="/static/logo-crane.svg" alt="Crane" className={classes.cranelogo} />
-        <h1 className={classes.h1}>Innovative software <span className={classes.with}>with</span> captivating experiences</h1>
+        <div className={classes.strapline}>Innovative software <span className={classes.with}>with</span> captivating experiences</div>
       </div>
-      <img src="/static/feature-image.svg" alt="Crane" className={classes.image} />
+      {/* <img src="/static/feature-image.svg" alt="Crane" className={classes.image} /> */}
     </div>
   )
 }

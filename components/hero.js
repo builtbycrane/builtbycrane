@@ -1,38 +1,46 @@
 import React from 'react'
 
+import CraneLogo from './crane-logo'
+
 import { createUseStyles } from 'react-jss'
 
 const ratio = 1184 / 1920
 
 const useStyles = createUseStyles(theme => ({
-  feature: {
-    backgroundImage: 'url(/static/crane-flying.jpg)',
+  hero: {
+    backgroundImage: 'url(/static/lake.jpg)',
+    backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'multiply',
     height: '100vh',
-    backgroundColor: theme.primary.main,
+    backgroundColor: theme.color.primary.dark,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  text: {
+  container: {
+    width: '95vw',
+    maxWidth: '1440px'
   },
   cranelogo: {
     width: '460px',
-    margin: '0 0 15px'
+    fill: '#fff'
   },
   strapline: {
-    fontSize: '40px',
-    lineHeight: '50px',
-    fontWeight: '700',
+    fontFamily: theme.font.sansSerif,
+    fontSize: '46px',
+    lineHeight: '56px',
+    fontWeight: 600,
     color: '#fff',
-    paddingLeft: '10px',
-    margin: '0'
+    marginTop: '26px',
+    paddingLeft: '40px',
+    width: '674px'
   },
   with: {
-    fontWeight: '400'
+    fontWeight: 300
   },
   '@media (max-width: 1024px)': {
     text: {
@@ -57,17 +65,19 @@ const useStyles = createUseStyles(theme => ({
   }
 }))
 
-const FeatureImage = () => {
+const Hero = () => {
   const classes = useStyles()
   return (
-    <div className={classes.feature}>
-      <div className={classes.text}>
-        <img src="/static/logo-crane.svg" alt="Crane" className={classes.cranelogo} />
-        <div className={classes.strapline}>Innovative software <span className={classes.with}>with</span> captivating experiences</div>
+    <div className={classes.hero}>
+      <div className={classes.container}>
+        <CraneLogo className={classes.cranelogo} />
+        <div className={classes.strapline}>
+          <div>Innovative software</div>
+          <div><span className={classes.with}>with</span> captivating experiences</div>
+        </div>
       </div>
-      {/* <img src="/static/feature-image.svg" alt="Crane" className={classes.image} /> */}
     </div>
   )
 }
 
-export default FeatureImage
+export default Hero

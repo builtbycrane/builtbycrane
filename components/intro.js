@@ -7,22 +7,22 @@ const useStyles = createUseStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '60px 0'
+    padding: '70px 0'
   },
   container: {
-    width: '95vw',
+    width: '90vw',
     maxWidth: '960px'
   },
   copy: {
     fontFamily: theme.font.sansSerif,
-    fontSize: '26px',
-    lineHeight: '44px',
+    fontSize: '32px',
+    lineHeight: '48px',
     fontWeight: 300,
     '& + &': {
       marginTop: '14px'
     },
-    b: {
-      fontWeight: 500
+    '& b': {
+      fontWeight: 600
     }
   },
   '@media (max-width: 1024px)': {
@@ -46,7 +46,7 @@ const Intro = () => {
     <div className={classes.intro}>
       <div className={classes.container}>
         <p className={classes.copy}>
-          Crane create innovative software solutions tailored to your business needs, with intuitive
+          <b>Crane</b> create innovative software solutions tailored to your business needs, with intuitive
           experiences that will captivate your users.
         </p>
         <p className={classes.copy}>

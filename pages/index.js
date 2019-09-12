@@ -1,13 +1,13 @@
 import React from 'react'
 
 import Layout from './../components/layout'
-import FeatureImage from './../components/feature-image'
+import Hero from '../components/hero'
 import Intro from './../components/intro'
 import Contact from './../components/contact'
 
 const Index = () => (
   <Layout>
-    <FeatureImage />
+    <Hero />
     <Intro />
     <Contact />
   </Layout>

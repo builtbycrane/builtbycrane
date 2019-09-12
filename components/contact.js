@@ -59,9 +59,6 @@ const Contact = () => {
   return (
     <div className={classes.wrapper}>
       <div className={classes.container}>
-        <div className={classes.image}>
-          <img src="/static/icon-plane.png" alt="Folded Crane Icon" className={classes.img}/>
-        </div>
         <div className={classes.text}>
           <h2 className={classes.h2}>Please get in touch, if you would like to work with us...</h2>
           <a href="mailto:hi@builtbycrane.co.uk" className={classes.btn}>email us</a>

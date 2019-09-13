@@ -6,14 +6,13 @@ import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
   hero: {
-    backgroundImage: 'url(/static/lake.jpg)',
+    backgroundImage: `radial-gradient(ellipse at center, ${theme.color.primary.main} 0%, ${theme.color.black} 100%), url(/static/hero.jpg)`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'multiply',
     height: '100vh',
     maxHeight: '768px',
-    backgroundColor: theme.color.primary.dark,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',

@@ -17,9 +17,9 @@ const useStyles = createUseStyles(theme => ({
     transition: '0.5s',
     padding: '0 20px',
     cursor: 'pointer',
-    border: `2px solid ${theme.color.primary.main}`,
+    // border: `2px solid ${theme.color.primary.main}`,
     '&:hover': {
-      border: `2px solid rgba(0,160,80,0)`,
+      // border: `2px solid rgba(0,160,80,0)`,
       color: theme.color.white
     },
     '&::before, &::after': {

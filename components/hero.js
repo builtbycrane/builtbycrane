@@ -28,8 +28,9 @@ const useStyles = createUseStyles(theme => ({
   },
   strapline: {
     fontFamily: theme.font.sansSerif,
-    fontSize: '46px',
-    lineHeight: '56px',
+    fontSize: '50px',
+    lineHeight: '52px',
+    letterSpacing: '-0.4px',
     fontWeight: 600,
     color: theme.color.white,
     marginTop: '26px',

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { createUseStyles } from 'react-jss'
+import Button from './button'
 
 const useStyles = createUseStyles(theme => ({
   contact: {
@@ -28,7 +29,9 @@ const useStyles = createUseStyles(theme => ({
     fontFamily: theme.font.sansSerif,
     fontSize: '46px',
     lineHeight: '56px',
-    color: theme.color.white
+    color: theme.color.white,
+    textAlign: 'center',
+    width: '60%'
   },
   footer: {
     display: 'flex',
@@ -48,11 +51,11 @@ const useStyles = createUseStyles(theme => ({
   btn: {
     fontFamily: theme.font.sansSerif,
     color: theme.color.white,
-    fontSize: '34px',
+    fontSize: '26px',
     border: `1px solid ${theme.color.white}`,
     textDecoration: 'none',
     display: 'inline-flex',
-    padding: '10px 22px'
+    padding: '16px 24px'
     // fontFamily: theme.font.sansSerif,
     // display: 'inline-block',
     // // maxWidth: '150px',
@@ -83,13 +86,13 @@ const Contact = () => {
     <div className={classes.contact}>
       <div className={classes.container}>
         <div className={classes.getInTouch}>Please get in touch, if you would like to work with us...</div>
-        <a href="mailto:hi@builtbycrane.co.uk" className={classes.btn}>hi@builtbycrane.co.uk</a>
+        <Button href="mailto:hi@builtbycrane.co.uk" className={classes.btn}>hi@builtbycrane.co.uk</Button>
         <div className={classes.footer}>
           <div className={classes.footerInfo}>
             <b>crane.</b> 1 Proctor Walk, Hawkinge, Kent CT18 7QS
           </div>
           <div className={classes.footerInfo}>
-              &copy; Crane Applications Ltd {new Date().getFullYear()}
+            &copy; Crane Applications Ltd {new Date().getFullYear()}
           </div>
         </div>
       </div>

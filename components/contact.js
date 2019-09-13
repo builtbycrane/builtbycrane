@@ -2,40 +2,53 @@ import React from 'react'
 
 import { createUseStyles } from 'react-jss'
 
-const useStyles = createUseStyles({
-  wrapper: {
-    width: '100%',
-    backgroundColor: '#eee'
+const useStyles = createUseStyles(theme => ({
+  contact: {
+    backgroundImage: 'url(./static/macbook.jpg)',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundBlendMode: 'soft-light',
+    // height: '100vh',
+    // maxHeight: '768px',
+    padding: '80px 0',
+    backgroundColor: '#222',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   container: {
-    maxWidth: '1040px',
-    padding: '80px 20px',
-    margin: '0 auto'
+    width: '90vw',
+    maxWidth: '960px'
   },
-  image: {
-    maxWidth: '120px',
-    width: '100%',
-    height: '120px',
-    margin: '0 auto 10px'
+  getInTouch: {
+    fontFamily: theme.font.sansSerif,
+    fontSize: '46px',
+    lineHeight: '56px',
+    color: theme.color.white
   },
-  img: {
-    width: '100%',
-    display: 'block'
+  footer: {
+    display: 'flex',
+    justifyContent: 'space-between'
   },
-  text: {
-    textAlign: 'center'
-  },
-  h2: {
-    fontSize: '45px',
-    margin: '0 0 25px'
+  footerInfo: {
+    fontFamily: theme.font.sansSerif,
+    fontSize: '16px',
+    lineHeight: '21px',
+    color: theme.color.white,
+    fontWeight: 300,
+    '& b': {
+      fontWeight: 600
+    }
   },
   btn: {
-    display: 'block',
-    maxWidth: '150px',
-    width: '100%',
-    backgroundImage: 'linear-gradient(right, #134E5E 0%, #71B280 51%, #134E5E 100%)',
+    fontFamily: theme.font.sansSerif,
+    display: 'inline-block',
+    // maxWidth: '150px',
+    backgroundImage: `linear-gradient(right, ${theme.color.primary.dark} 0%, ${theme.color.primary.main} 51%, ${theme.color.primary.dark} 100%)`,
     backgroundSize: '200% auto',
-    color: '#fff',
+    color: theme.color.white,
     margin: '20px auto',
     padding: '10px 15px',
     fontSize: '26px',
@@ -52,16 +65,24 @@ const useStyles = createUseStyles({
       lineHeight: '35px'
     }
   }
-})
+}))
 
 const Contact = () => {
   const classes = useStyles()
   return (
-    <div className={classes.wrapper}>
+    <div className={classes.contact}>
       <div className={classes.container}>
         <div className={classes.text}>
-          <h2 className={classes.h2}>Please get in touch, if you would like to work with us...</h2>
-          <a href="mailto:hi@builtbycrane.co.uk" className={classes.btn}>email us</a>
+          <div className={classes.getInTouch}>Please get in touch, if you would like to work with us...</div>
+          <a href="mailto:hi@builtbycrane.co.uk" className={classes.btn}>hi@builtbycrane.co.uk</a>
+          <div className={classes.footer}>
+            <div className={classes.footerInfo}>
+              <b>crane.</b> 1 Proctor Walk, Hawkinge, Kent CT18 7QS
+            </div>
+            <div className={classes.footerInfo}>
+              &copy; Crane Applications Ltd {new Date().getFullYear()}
+            </div>
+          </div>
         </div>
       </div>
     </div>

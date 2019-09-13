@@ -4,17 +4,15 @@ import CraneLogo from './crane-logo'
 
 import { createUseStyles } from 'react-jss'
 
-const ratio = 1184 / 1920
-
 const useStyles = createUseStyles(theme => ({
   hero: {
     backgroundImage: 'url(/static/lake.jpg)',
-    backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'multiply',
     height: '100vh',
+    maxHeight: '768px',
     backgroundColor: theme.color.primary.dark,
     display: 'flex',
     flexDirection: 'column',
@@ -22,19 +20,19 @@ const useStyles = createUseStyles(theme => ({
     alignItems: 'center'
   },
   container: {
-    width: '95vw',
-    maxWidth: '1440px'
+    width: '90vw',
+    maxWidth: '960px'
   },
   cranelogo: {
     width: '460px',
-    fill: '#fff'
+    fill: theme.color.white
   },
   strapline: {
     fontFamily: theme.font.sansSerif,
     fontSize: '46px',
     lineHeight: '56px',
     fontWeight: 600,
-    color: '#fff',
+    color: theme.color.white,
     marginTop: '26px',
     paddingLeft: '40px',
     width: '674px'

@@ -11,7 +11,6 @@ const useStyles = createUseStyles(theme => ({
     verticalAlign: 'middle',
     color: `${theme.color.primary.main}66`,
     display: 'block',
-    // height: '60px',
     lineHeight: '60px',
     textAlign: 'center',
     transition: '0.5s',

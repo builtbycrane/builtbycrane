@@ -35,12 +35,16 @@ const useStyles = createUseStyles(theme => ({
     color: theme.color.white,
     marginTop: '26px',
     paddingLeft: '40px',
-    width: '674px'
+    maxWidth: '674px'
   },
   with: {
     fontWeight: 300
   },
   '@media (max-width: 1024px)': {
+    hero: {
+      height: 'auto',
+      padding: '20px 10px'
+    },
     text: {
       top: '20%',
       left: '0',
@@ -57,8 +61,10 @@ const useStyles = createUseStyles(theme => ({
     },
     strapline: {
       padding: '0',
-      fontSize: '30px',
-      lineHeight: '35px'
+      fontSize: '26px',
+      lineHeight: '35px',
+      textAlign: 'right'
+
     }
   }
 }))
@@ -69,10 +75,10 @@ const Hero = () => {
     <div className={classes.hero}>
       <div className={classes.container}>
         <CraneLogo className={classes.cranelogo} />
-        <div className={classes.strapline}>
-          <div>Innovative software</div>
-          <div><span className={classes.with}>with</span> captivating experiences</div>
-        </div>
+        <h1 className={classes.strapline}>
+          Innovative software<br/>
+          <span className={classes.with}>with</span> captivating experiences
+        </h1>
       </div>
     </div>
   )

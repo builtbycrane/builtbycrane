@@ -45,6 +45,12 @@ const useStyles = createUseStyles(theme => ({
     '&:hover::after, &:hover::before': {
       transform: 'scale(1)'
     }
+  },
+  '@media (max-width: 767px)': {
+    button: {
+      color: `${theme.color.white}`,
+      border: `2px solid ${theme.color.white}`,
+    }
   }
 }))
 

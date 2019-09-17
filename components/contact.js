@@ -11,7 +11,7 @@ const useStyles = createUseStyles(theme => ({
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'soft-light',
     height: '586px',
-    padding: '80px 0',
+    padding: '60px 0 20px',
     backgroundColor: '#222',
     display: 'flex',
     justifyContent: 'center',
@@ -31,12 +31,14 @@ const useStyles = createUseStyles(theme => ({
     lineHeight: '56px',
     color: theme.color.white,
     textAlign: 'center',
-    width: '60%'
+    width: '60%',
+    margin: '0'
   },
   footer: {
     display: 'flex',
     justifyContent: 'space-between',
-    alignSelf: 'stretch'
+    alignSelf: 'stretch',
+    padding: '20px 0 0'
   },
   footerInfo: {
     fontFamily: theme.font.sansSerif,

@@ -55,15 +55,17 @@ const useStyles = createUseStyles(theme => ({
       padding: '0 20px'
     },
     cranelogo: {
-      margin: '0 auto 10px',
+      margin: '0 auto 20px',
       padding: '0',
-      width: '150px',
+      width: '230px',
+      display: 'block'
     },
     strapline: {
       padding: '0',
       fontSize: '26px',
       lineHeight: '35px',
-      margin: '0 auto'
+      margin: '0 auto',
+      textAlign: 'center'
     }
   }
 }))

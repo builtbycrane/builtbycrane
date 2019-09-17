@@ -25,7 +25,7 @@ const useStyles = createUseStyles(theme => ({
       fontWeight: 600
     }
   },
-  '@media (max-width: 1024px)': {
+  '@media (max-width: 767px)': {
     intro: {
       padding: '40px 20px 30px'
     },

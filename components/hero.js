@@ -40,9 +40,9 @@ const useStyles = createUseStyles(theme => ({
   with: {
     fontWeight: 300
   },
-  '@media (max-width: 1024px)': {
+  '@media (max-width: 767px)': {
     hero: {
-      height: 'auto',
+      height: '40vh',
       padding: '20px 10px'
     },
     text: {
@@ -55,16 +55,15 @@ const useStyles = createUseStyles(theme => ({
       padding: '0 20px'
     },
     cranelogo: {
-      margin: '0 auto',
-      padding: '0 20px 0 0',
-      width: '250px'
+      margin: '0 auto 10px',
+      padding: '0',
+      width: '150px',
     },
     strapline: {
       padding: '0',
       fontSize: '26px',
       lineHeight: '35px',
-      textAlign: 'right'
-
+      margin: '0 auto'
     }
   }
 }))

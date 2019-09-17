@@ -48,18 +48,9 @@ const useStyles = createUseStyles(theme => ({
       fontWeight: 600
     }
   },
-  btn: {
-    fontFamily: theme.font.sansSerif,
-    color: theme.color.white,
-    fontSize: '26px',
-    border: `1px solid ${theme.color.white}`,
-    textDecoration: 'none',
-    display: 'inline-flex',
-    padding: '16px 24px'
-  },
-  '@media (max-width: 1024px)': {
+  '@media (max-width: 767px)': {
     contact: {
-      height: 'auto',
+      height: '40vh',
       padding: '20px 10px',
     },
     getInTouch: {
@@ -85,7 +76,7 @@ const Contact = () => {
     <div className={classes.contact}>
       <div className={classes.container}>
         <h2 className={classes.getInTouch}>Please get in touch, if you would like to work with us...</h2>
-        <Button href="mailto:hi@builtbycrane.co.uk" className={classes.btn}>hi@builtbycrane.co.uk</Button>
+        <Button href="mailto:hi@builtbycrane.co.uk">hi@builtbycrane.co.uk</Button>
         <div className={classes.footer}>
           <p className={classes.footerInfo}>
             <b>crane.</b> 1 Proctor Walk, Hawkinge, Kent CT18 7QS

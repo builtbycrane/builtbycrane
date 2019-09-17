@@ -32,7 +32,7 @@ const useStyles = createUseStyles(theme => ({
     color: theme.color.white,
     textAlign: 'center',
     width: '60%',
-    margin: '0'
+    margin: '20px 0'
   },
   footer: {
     display: 'flex',

@@ -11,7 +11,6 @@ const useStyles = createUseStyles(theme => ({
     verticalAlign: 'middle',
     color: `${theme.color.primary.main}66`,
     display: 'block',
-    // height: '60px',
     lineHeight: '60px',
     textAlign: 'center',
     transition: '0.5s',
@@ -45,6 +44,12 @@ const useStyles = createUseStyles(theme => ({
     },
     '&:hover::after, &:hover::before': {
       transform: 'scale(1)'
+    }
+  },
+  '@media (max-width: 767px)': {
+    button: {
+      color: `${theme.color.white}`,
+      border: `2px solid ${theme.color.white}`,
     }
   }
 }))

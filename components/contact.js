@@ -11,7 +11,7 @@ const useStyles = createUseStyles(theme => ({
     backgroundRepeat: 'no-repeat',
     backgroundBlendMode: 'soft-light',
     height: '586px',
-    padding: '80px 0',
+    padding: '60px 0 20px',
     backgroundColor: '#222',
     display: 'flex',
     justifyContent: 'center',
@@ -31,12 +31,14 @@ const useStyles = createUseStyles(theme => ({
     lineHeight: '56px',
     color: theme.color.white,
     textAlign: 'center',
-    width: '60%'
+    width: '60%',
+    margin: '20px 0'
   },
   footer: {
     display: 'flex',
     justifyContent: 'space-between',
-    alignSelf: 'stretch'
+    alignSelf: 'stretch',
+    padding: '20px 0 0'
   },
   footerInfo: {
     fontFamily: theme.font.sansSerif,
@@ -48,35 +50,25 @@ const useStyles = createUseStyles(theme => ({
       fontWeight: 600
     }
   },
-  btn: {
-    fontFamily: theme.font.sansSerif,
-    color: theme.color.white,
-    fontSize: '26px',
-    border: `1px solid ${theme.color.white}`,
-    textDecoration: 'none',
-    display: 'inline-flex',
-    padding: '16px 24px'
-    // fontFamily: theme.font.sansSerif,
-    // display: 'inline-block',
-    // // maxWidth: '150px',
-    // backgroundImage: `linear-gradient(right, ${theme.color.primary.dark} 0%, ${theme.color.primary.main} 51%, ${theme.color.primary.dark} 100%)`,
-    // backgroundSize: '200% auto',
-    // color: theme.color.white,
-    // margin: '20px auto',
-    // padding: '10px 15px',
-    // fontSize: '26px',
-    // textDecoration: 'none',
-    // transition: '0.5s',
-    // borderRadius: '10px',
-    // '&:hover': {
-    //   backgroundPosition: 'right center'
-    // }
-  },
-  '@media (max-width: 1024px)': {
-    h2: {
-      fontSize: '30px',
-      lineHeight: '35px'
-    }
+  '@media (max-width: 767px)': {
+    contact: {
+      height: '40vh',
+      padding: '20px 10px',
+    },
+    getInTouch: {
+      fontSize: '24px',
+      lineHeight: '34px',
+      width: 'auto'
+    },
+    footer: {
+      display: 'block',
+      textAlign: 'center',
+      width: '80%',
+      margin: '20px auto 0',
+      fontSize: '8px',
+      lineHeight: '18px',
+      opacity: '0.6'
+    },
   }
 }))
 
@@ -85,15 +77,15 @@ const Contact = () => {
   return (
     <div className={classes.contact}>
       <div className={classes.container}>
-        <div className={classes.getInTouch}>Please get in touch, if you would like to work with us...</div>
-        <Button href="mailto:hi@builtbycrane.co.uk" className={classes.btn}>hi@builtbycrane.co.uk</Button>
+        <h2 className={classes.getInTouch}>Please get in touch, if you would like to work with us...</h2>
+        <Button href="mailto:hi@builtbycrane.co.uk">hi@builtbycrane.co.uk</Button>
         <div className={classes.footer}>
-          <div className={classes.footerInfo}>
+          <p className={classes.footerInfo}>
             <b>crane.</b> 1 Proctor Walk, Hawkinge, Kent CT18 7QS
-          </div>
-          <div className={classes.footerInfo}>
+          </p>
+          <p className={classes.footerInfo}>
             &copy; Crane Applications Ltd {new Date().getFullYear()}
-          </div>
+          </p>
         </div>
       </div>
     </div>

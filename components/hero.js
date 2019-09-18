@@ -35,12 +35,16 @@ const useStyles = createUseStyles(theme => ({
     color: theme.color.white,
     marginTop: '26px',
     paddingLeft: '40px',
-    width: '674px'
+    maxWidth: '674px'
   },
   with: {
     fontWeight: 300
   },
-  '@media (max-width: 1024px)': {
+  '@media (max-width: 767px)': {
+    hero: {
+      height: '40vh',
+      padding: '20px 10px'
+    },
     text: {
       top: '20%',
       left: '0',
@@ -51,14 +55,17 @@ const useStyles = createUseStyles(theme => ({
       padding: '0 20px'
     },
     cranelogo: {
-      margin: '0 auto',
-      padding: '0 20px 0 0',
-      width: '250px'
+      margin: '0 auto 20px',
+      padding: '0',
+      width: '230px',
+      display: 'block'
     },
     strapline: {
       padding: '0',
-      fontSize: '30px',
-      lineHeight: '35px'
+      fontSize: '26px',
+      lineHeight: '35px',
+      margin: '0 auto',
+      textAlign: 'center'
     }
   }
 }))
@@ -69,10 +76,10 @@ const Hero = () => {
     <div className={classes.hero}>
       <div className={classes.container}>
         <CraneLogo className={classes.cranelogo} />
-        <div className={classes.strapline}>
-          <div>Innovative software</div>
-          <div><span className={classes.with}>with</span> captivating experiences</div>
-        </div>
+        <h1 className={classes.strapline}>
+          Innovative software<br/>
+          <span className={classes.with}>with</span> captivating experiences
+        </h1>
       </div>
     </div>
   )

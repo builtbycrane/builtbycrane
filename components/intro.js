@@ -15,8 +15,8 @@ const useStyles = createUseStyles(theme => ({
   },
   copy: {
     fontFamily: theme.font.sansSerif,
-    fontSize: '32px',
-    lineHeight: '48px',
+    fontSize: '28px',
+    lineHeight: '38px',
     fontWeight: 300,
     '& + &': {
       marginTop: '14px'
@@ -25,17 +25,14 @@ const useStyles = createUseStyles(theme => ({
       fontWeight: 600
     }
   },
-  '@media (max-width: 1024px)': {
-    wrapper: {
-      padding: '40px 20px 80px'
-    },
-    h2: {
-      fontSize: '30px',
-      lineHeight: '35px'
+  '@media (max-width: 767px)': {
+    intro: {
+      padding: '40px 20px 30px'
     },
     copy: {
       fontSize: '22px',
-      lineHeight: '32px'
+      lineHeight: '32px',
+      marginBottom: '30px'
     }
   }
 }))
